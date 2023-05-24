@@ -25,7 +25,7 @@ poetry install
 Place your `.pdf` files into `data/pdf` directory
 
 ## 🚀 Launch
-Run `poetry run task start`.
+Run `python main.py`.
 
 ___
 
