@@ -18,7 +18,7 @@ ___
 ```
 git clone https://github.com/tiIt-dev/PDFtoAudio 
 cd PDFtoAudio
-poetry install
+poetry install # or use command: pip3 install -r requirements.txt
 ```
 
 ## ⚙ Configuration
