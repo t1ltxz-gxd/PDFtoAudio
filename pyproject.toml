@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "pdf-to-mp3"
+version = "0.1.0"
+description = ""
+authors = ["t1lt-gxd <zio0@bk.ru>"]
+readme = "README.md"
+packages = [{include = "pdf_to_mp3"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+langdetect = "^1.0.9"
+pdfplumber = "^0.9.0"
+loguru = "^0.7.0"
+gtts = "^2.3.2"
+
+
+[tool.poetry.group.dev.dependencies]
+black = "^23.3.0"
+autoflake = "^2.1.1"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
