@@ -18,14 +18,14 @@ ___
 ```
 git clone https://github.com/tiIt-dev/PDFtoAudio 
 cd PDFtoAudio
-poetry install
+poetry install # or: pip3 install -r requirements.txt
 ```
 
 ## ⚙ Configuration
 Place your `.pdf` files into `data/pdf` directory
 
 ## 🚀 Launch
-Run `poetry run task start`.
+Run `python3 main.py`
 
 ___
 

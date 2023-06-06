@@ -47,6 +47,14 @@ class DocumentHandler:
         self.Document.__dict__[key] = value
 
 
+def main():
+    start = time.perf_counter()
+    asyncio.run(get_documents(file_path="data/pdf"))
+    logger.info(
+        f"The program has ended. Timeout was: {time.perf_counter() - start:.02f} second(s)"
+    )
+
+
 async def get_documents(file_path):
     logger.info("Checking for PDF Files in Directory...")
     filenames = next(walk(file_path), (logger.info(next(walk(file_path))), None, []))[
@@ -68,6 +76,10 @@ async def get_documents(file_path):
             document = Document(title=title, text=text, language=language)
             logger.info(document.get_name() + ": " + document.get_language())
             await save_mp3(language=language, document=document)
+        else:
+            logger.warning(
+                "Could not find .pdf files! Please put your files in the next directory: data/pdf"
+            )
 
 
 async def save_mp3(document, language, slow=False):
@@ -78,8 +90,4 @@ async def save_mp3(document, language, slow=False):
 
 
 if __name__ == "__main__":
-    start = time.perf_counter()
-    asyncio.run(get_documents(file_path="data/pdf"))
-    logger.info(
-        f"The program has ended. Timeout was: {time.perf_counter() - start:.02f} second(s)"
-    )
+    main()
