@@ -4,7 +4,7 @@
 </div>
 
 # PDFtoAudio
-[![Stars](https://custom-icon-badges.demolab.com/github/stars/tiIt-dev/TiltBot?logo=star)](https://github.com/tiIt-dev/PDFtoAudio/stargazers')
+[![Stars](https://custom-icon-badges.demolab.com/github/stars/tiIt-dev/PDFtoAudio?logo=star)](https://github.com/tiIt-dev/PDFtoAudio/stargazers)
 [![Open issues](https://custom-icon-badges.demolab.com/github/issues-raw/tiIt-dev/PDFtoAudio?logo=issue)](https://github.com/tiIt-dev/TiltBot/issues)
 [![License](https://custom-icon-badges.demolab.com/github/license/tiIt-dev/PDFtoAudio?logo=law)](https://github.com/DenverCoder1/custom-icon-badges/blob/main/LICENSE?rgh-link-date=2023-03-15T18%3A10%3A26Z "license MIT")
 [![Powered by Nextcord](https://custom-icon-badges.herokuapp.com/badge/-Powered%20by%20Loguru-0d1620?logo=loguru)](https://github.com/nextcord/nextcord "Powered by Nextcord")
@@ -18,14 +18,14 @@ ___
 ```
 git clone https://github.com/tiIt-dev/PDFtoAudio 
 cd PDFtoAudio
-poetry install # or: pip3 install -r requirements.txt
+poetry install # or use command: pip3 install -r requirements.txt
 ```
 
 ## ⚙ Configuration
 Place your `.pdf` files into `data/pdf` directory
 
 ## 🚀 Launch
-Run `python3 main.py`
+Run `python main.py`.
 
 ___
 
